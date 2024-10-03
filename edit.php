@@ -123,6 +123,7 @@ $est = $result1['est_arrival_date'];
             <option value="ON PROCESS" <?php if ($progress == "ON PROCESS") echo 'selected'?>>ON PROCESS</option>
             <option value="WHAITING PART" <?php if ($progress == "WHAITING PART") echo 'selected'?>>WHAITING PART</option>
             <option value="PART READY" <?php if ($progress == "PART READY") echo 'selected'?>>PART READY</option>
+            <option value="SR" <?php if ($progress == "SR") echo 'selected'?>>SR</option>
           </select>
 
           <label for="catatan">Note Progress</label>
