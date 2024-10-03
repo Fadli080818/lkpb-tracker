@@ -1,0 +1,308 @@
+:root {
+  --primary: #ba0000;
+  --bg: #013c53;
+}
+
+* {
+  text-decoration: none;
+  color: black;
+  font-family: "Exo", sans-serif;
+  font-size: 1rem;
+}
+
+/* CSS Index.php */
+
+.navbar {
+  width: auto;
+  background-color: var(--bg);
+  padding: 10px;
+  margin-bottom: 10px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.nav-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 5px;
+}
+
+.navbar .nav .nav-content a {
+  color: #fff;
+}
+
+.navbar .nav .nav-content #loginTxt {
+  color: #000000;
+  padding: 5px 20px;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+.navbar .nav .nav-content #loginTxt:hover {
+  background-color: #ba0000;
+  color: #ffffff;
+}
+
+.hero-container {
+  width: 100%;
+  text-align: center;
+}
+
+.hero-container h1 {
+  font-size: 1.5rem;
+  margin-top: 65px;
+}
+
+.hero-container form {
+  margin-bottom: 20px;
+}
+
+.hero-container #kategori {
+  border: none;
+  color: white;
+  background-color: var(--bg);
+  padding: 5px 5px;
+  border-radius: 5px;
+}
+
+.hero-container option {
+  color: white;
+}
+
+.hero-container #keyword {
+  border: none;
+  padding: 5px 5px;
+  background-color: #e0e3e5;
+  border-radius: 5px;
+}
+
+.hero-container form button {
+  background-color: var(--bg);
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: none;
+  color: white;
+}
+
+.hero-container form button:hover {
+  background-color: var(--primary);
+  cursor: pointer;
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+}
+
+.hero-content {
+  width: 95%;
+  max-height: 500px;
+  overflow-y: auto;
+}
+
+th {
+  background-color: var(--bg);
+  color: white;
+  padding: 5px 20px;
+}
+
+th .nama {
+  padding: 5px 500px;
+}
+
+td {
+  padding: 5px 0;
+}
+
+tr:hover {
+  background-color: rgb(213, 220, 232);
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  border: 1px solid #ddd;
+  vertical-align: center;
+  line-height: 25px;
+}
+
+.hero-content a {
+  background-color: var(--bg);
+  color: #fff;
+  padding: 1px 5px;
+  border-radius: 5px;
+  font-size: 0.8rem;
+}
+
+.hero-content a:hover {
+  background-color: var(--primary);
+}
+
+/* tr:nth-child(even) {
+  background-color: #edebeb;
+} */
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 40px;
+  background-color: var(--bg);
+}
+
+footer .container .content p {
+  color: white;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+/* CSS add.php */
+
+.addContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 700px;
+  margin-top: 70px;
+}
+
+.addContent {
+  background-color: var(--bg);
+  width: 70%;
+  height: auto;
+  border-radius: 10px;
+  padding: 10px 10px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.addForm {
+  display: flex;
+  flex-direction: column;
+}
+
+.addContent h2 {
+  text-align: center;
+  color: white;
+  font-size: 1.2rem;
+}
+
+.addContainer .addContent input {
+  padding: 5px 5px;
+  border: none;
+  border-radius: 5px;
+  width: 95%;
+  margin: 5px 5px;
+}
+
+.addContainer .addContent label {
+  color: white;
+  margin: 5px 5px;
+}
+
+.addContainer .addContent select {
+  padding: 5px 5px;
+  border: none;
+  width: 96%;
+  margin: 5px 5px;
+  border-radius: 5px;
+}
+
+.addContainer .addContent button {
+  background-color: var(--primary);
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  margin: 20px 5px;
+  width: 100px;
+  cursor: pointer;
+}
+
+.check {
+  display: inline-block;
+}
+
+.editContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 700px;
+  margin-top: 280px;
+}
+
+.editContent {
+  background-color: var(--bg);
+  width: 70%;
+  height: auto;
+  border-radius: 10px;
+  padding: 10px 10px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.editForm {
+  display: flex;
+  flex-direction: column;
+}
+
+.editContent h2 {
+  text-align: center;
+  color: white;
+  font-size: 1.2rem;
+}
+
+.editContainer .editContent input,
+textarea {
+  padding: 5px 5px;
+  border: none;
+  border-radius: 5px;
+  width: 95%;
+  height: auto;
+  margin: 5px 5px;
+}
+
+.editContainer .editContent label {
+  color: white;
+  margin: 5px 5px;
+}
+
+.editContainer .editContent select {
+  padding: 5px 5px;
+  border: none;
+  width: 96%;
+  margin: 5px 5px;
+  border-radius: 5px;
+}
+
+.editContainer .editContent button {
+  background-color: var(--primary);
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  margin: 20px 5px;
+  width: 100px;
+  cursor: pointer;
+}
+
+@media (max-width: 480px) {
+  * {
+    font-size: 0.9rem;
+  }
+
+  .addContent {
+    width: 100%;
+  }
+
+  .editContainer {
+    margin-top: 200px;
+  }
+
+  .editContent {
+    width: 90%;
+  }
+}
