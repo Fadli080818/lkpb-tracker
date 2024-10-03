@@ -53,8 +53,8 @@ $est = $result1['est_arrival_date'];
       </div>
     </nav>
 
-    <div class="editContainer">
-      <div class="editContent">
+    <div class="editContainer" >
+      <div class="editContent" >
         <h2>UPDATE</h2>
         <form action="update.php" method="POST" class="editForm">
         <input type="hidden" name="id" value="<?= $noReceipt?>">  
@@ -65,7 +65,6 @@ $est = $result1['est_arrival_date'];
             id="noDo"
             name="noDo"
             value="<?= $noDo?>"
-            style="color:white;"
             disabled
           />
 
@@ -75,7 +74,6 @@ $est = $result1['est_arrival_date'];
             id="noReceipt"
             name="noReceipt"
             value="<?= $noReceipt?>"
-            style="color:white;"
             disabled
           />
 
@@ -85,7 +83,6 @@ $est = $result1['est_arrival_date'];
             id="noLkpb"
             name="noLkpb"
             value="<?= $noLkpb?>"
-            style="color:white;"
             disabled
           />
 
@@ -95,7 +92,6 @@ $est = $result1['est_arrival_date'];
             id="nama"
             name="nama"
             value="<?= $nama?>"
-            style="color:white;"
             disabled
           />
 
@@ -105,7 +101,6 @@ $est = $result1['est_arrival_date'];
             id="dept"
             name="dept"
             value="<?= $dept?>"
-            style="color:white;"
             disabled
           />
 
@@ -115,29 +110,23 @@ $est = $result1['est_arrival_date'];
             id="sales"
             name="sales"
             value="<?= $sales?>"
-            style="color:white;"
             disabled
           />
 
           <label for="kerusakan">Detail Kerusakan</label>
-          <textarea name="kerusakan" id="kerusakan"><?= $kerusakan?></textarea>
+          <textarea name="kerusakan" id="kerusakan" rows="5"><?= $kerusakan?></textarea>
 
-          <p style="margin:20px;text-align:center;color:white">- - Progress Tracking - - </p>
+          <p style="margin:20px;text-align:center;">- - Progress Tracking - - </p>
         
           <label for="progress">Progress</label >
-          <select name="progress" id="progress">
+          <select name="progress" id="progress" >
             <option value="ON PROCESS" <?php if ($progress == "ON PROCESS") echo 'selected'?>>ON PROCESS</option>
             <option value="WHAITING PART" <?php if ($progress == "WHAITING PART") echo 'selected'?>>WHAITING PART</option>
             <option value="PART READY" <?php if ($progress == "PART READY") echo 'selected'?>>PART READY</option>
           </select>
 
           <label for="catatan">Note Progress</label>
-          <input
-            type="text"
-            id="catatan"
-            name="catatan"
-            value="<?= $catatan?>"
-          />
+          <textarea name="catatan" id="catatan" rows="5"><?= $catatan?></textarea>
 
           <label for="tuguby">Tugu By</label>
           <select name="tuguby" id="tuguby">
@@ -164,12 +153,13 @@ $est = $result1['est_arrival_date'];
             name="somno"
             value="<?= $somno ?>"
           />
-          <label for="estdate">Estimasi Tiba</label>
+          <label for="estdate" >Estimasi Tiba</label>
           <input
             type="date"
             id="estdate"
             name="estdate"
             value="<?= $est ?>"
+            style="background-color:var(--bg);color:white;"
           />
           <button type="submit">Simpan</button>
         </form>

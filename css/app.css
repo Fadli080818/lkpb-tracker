@@ -75,8 +75,11 @@
 .hero-container #keyword {
   border: none;
   padding: 5px 5px;
-  background-color: #e0e3e5;
+  background-color: white;
   border-radius: 5px;
+  border: 0.5px solid #cfe3ee;
+  box-shadow: 0px 5px 10px #cfe3ee;
+  width: 150px;
 }
 
 .hero-container form button {
@@ -167,17 +170,19 @@ footer .container .content p {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 700px;
-  margin-top: 70px;
+  height: auto;
+  margin-top: 75px;
 }
 
 .addContent {
-  background-color: var(--bg);
+  background-color: white;
   width: 70%;
   height: auto;
   border-radius: 10px;
   padding: 10px 10px;
-  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 5px 10px #cfe3ee;
+  margin-bottom: 20px;
+  border: 0.5px solid #cfe3ee;
 }
 
 .addForm {
@@ -187,29 +192,31 @@ footer .container .content p {
 
 .addContent h2 {
   text-align: center;
-  color: white;
   font-size: 1.2rem;
 }
 
 .addContainer .addContent input {
   padding: 5px 5px;
-  border: none;
+  border: 0.5px solid #cfe3ee;
   border-radius: 5px;
   width: 95%;
   margin: 5px 5px;
+  box-shadow: 0px 5px 10px #cfe3ee;
 }
 
 .addContainer .addContent label {
-  color: white;
   margin: 5px 5px;
 }
 
-.addContainer .addContent select {
+.addContainer .addContent select,
+option {
   padding: 5px 5px;
   border: none;
   width: 96%;
   margin: 5px 5px;
   border-radius: 5px;
+  background-color: var(--bg);
+  color: white;
 }
 
 .addContainer .addContent button {
@@ -220,6 +227,9 @@ footer .container .content p {
   border-radius: 5px;
   margin: 20px 5px;
   width: 100px;
+}
+.addContainer .addContent button:hover {
+  background-color: var(--bg);
   cursor: pointer;
 }
 
@@ -231,17 +241,19 @@ footer .container .content p {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 700px;
-  margin-top: 280px;
+  height: auto;
+  margin-top: 75px;
 }
 
 .editContent {
-  background-color: var(--bg);
+  background-color: white;
   width: 70%;
   height: auto;
   border-radius: 10px;
   padding: 10px 10px;
-  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 5px 10px #cfe3ee;
+  margin-bottom: 20px;
+  border: 0.5px solid #cfe3ee;
 }
 
 .editForm {
@@ -251,32 +263,36 @@ footer .container .content p {
 
 .editContent h2 {
   text-align: center;
-  color: white;
+  color: black;
   font-size: 1.2rem;
 }
 
 .editContainer .editContent input,
 textarea {
   padding: 5px 5px;
-  border: none;
+  border: 0.5px solid #cfe3ee;
   border-radius: 5px;
   width: 95%;
   height: auto;
   margin: 5px 5px;
+  box-shadow: 0px 5px 10px #cfe3ee;
 }
 
 .editContainer .editContent label,
 p {
-  color: white;
+  color: black;
   margin: 5px 5px;
 }
 
-.editContainer .editContent select {
+.editContainer .editContent select,
+option {
   padding: 5px 5px;
   border: none;
   width: 96%;
   margin: 5px 5px;
   border-radius: 5px;
+  background-color: var(--bg);
+  color: white;
 }
 
 .editContainer .editContent button {
@@ -287,6 +303,10 @@ p {
   border-radius: 5px;
   margin: 20px 5px;
   width: 100px;
+}
+
+.editContainer .editContent button:hover {
+  background-color: var(--bg);
   cursor: pointer;
 }
 
@@ -296,14 +316,18 @@ p {
   }
 
   .addContent {
-    width: 100%;
+    width: 90%;
   }
 
   .editContainer {
-    margin-top: 200px;
+    margin-top: 65px;
   }
 
   .editContent {
     width: 90%;
+  }
+
+  .addContainer {
+    margin-top: 65px;
   }
 }

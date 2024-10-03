@@ -96,7 +96,7 @@ if (isset($_GET['keyword'])) {
               </thead>
               <tbody>
                   <?php foreach($result as $key => $value):?>
-                      <tr <?php if ($value['status'] == 'FINISH') echo 'style="background-color:#c5f6d4"' ?>>
+                      <tr <?php if ($value['status'] == 'FINISH') echo 'style="background-color:#cfe3ee"' ?>>
                         <td><?= $value['noLkpb']?></td>
                         <td><?= $value['noReceipt']?></td>
                         <td><?= $value['nama']?></td>

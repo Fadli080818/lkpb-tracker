@@ -54,10 +54,10 @@ $est = $result1['est_arrival_date'];
       </div>
     </nav>
 
-    <div class="editContainer">
+    <div class="editContainer" style="margin-top=220px">
       <div class="editContent">
         <h2>DETAIL</h2>
-        <form action="update.php" method="POST" class="editForm">
+        <form action="index.php" class="editForm">
         <input type="hidden" name="id" value="<?= $noReceipt?>">  
         
         <label for="noDo">No. DO</label>
@@ -66,7 +66,7 @@ $est = $result1['est_arrival_date'];
             id="noDo"
             name="noDo"
             value="<?= $noDo?>"
-            style="color:white;"
+           
             disabled
           />
 
@@ -76,7 +76,7 @@ $est = $result1['est_arrival_date'];
             id="noReceipt"
             name="noReceipt"
             value="<?= $noReceipt?>"
-            style="color:white;"
+            
             disabled
           />
 
@@ -86,7 +86,7 @@ $est = $result1['est_arrival_date'];
             id="noLkpb"
             name="noLkpb"
             value="<?= $noLkpb?>"
-            style="color:white;"
+            
             disabled
           />
 
@@ -96,7 +96,7 @@ $est = $result1['est_arrival_date'];
             id="nama"
             name="nama"
             value="<?= $nama?>"
-            style="color:white;"
+           
             disabled
           />
 
@@ -106,7 +106,7 @@ $est = $result1['est_arrival_date'];
             id="dept"
             name="dept"
             value="<?= $dept?>"
-            style="color:white;"
+            
             disabled
           />
 
@@ -116,12 +116,12 @@ $est = $result1['est_arrival_date'];
             id="sales"
             name="sales"
             value="<?= $sales?>"
-            style="color:white;"
+            
             disabled
           />
 
           <label for="kerusakan">Detail Kerusakan</label>
-          <textarea name="kerusakan" id="kerusakan" disabled style="color:white"><?= $kerusakan?></textarea>
+          <textarea name="kerusakan" id="kerusakan" rows="5" disabled><?= $kerusakan?></textarea>
 
           <label style="margin:20px;text-align:center">- - Progress Tracking - - </label>
         
@@ -131,19 +131,12 @@ $est = $result1['est_arrival_date'];
             id="progress"
             name="progress"
             value="<?= $progress?>"
-            style="color:white;"
+          
             disabled
           />
 
           <label for="catatan">Note Progress</label>
-          <input
-            type="text"
-            id="catatan"
-            name="catatan"
-            value="<?= $catatan?>"
-            style="color:white;"
-            disabled
-          />
+          <textarea name="catatan" id="catatan" rows="5" disabled><?= $catatan?></textarea>
 
           <label for="tuguby">Tugu By</label>
           <input
@@ -151,7 +144,7 @@ $est = $result1['est_arrival_date'];
             id="tuguby"
             name="tuguby"
             value="<?= $tuguby?>"
-            style="color:white;"
+            
             disabled
           />
 
@@ -163,7 +156,7 @@ $est = $result1['est_arrival_date'];
             id="odno"
             name="odno"
             value="<?= $odno ?>"
-            style="color:white;"
+           
             disabled
           />
 
@@ -173,7 +166,6 @@ $est = $result1['est_arrival_date'];
             id="somno"
             name="somno"
             value="<?= $somno ?>"
-            style="color:white;"
             disabled
           />
 
@@ -183,10 +175,10 @@ $est = $result1['est_arrival_date'];
             id="estdate"
             name="estdate"
             value="<?= $est ?>"
-            style="color:white;"
             disabled
           />
-          <br>
+          
+          <button>Kembali</button>
         </form>
       </div>
     </div>
