@@ -15,6 +15,7 @@ $dept = $result['dept'];
 $sales = $result['sales'];
 $kerusakan = $result['kerusakan'];
 $progress = $result['progress'];
+$catatan = $result['catatan'];
 $status = $result['status'];
 
 $query1 = mysqli_query($conn,"select * from progresscheck where noReceipt = '$id'");
@@ -134,6 +135,16 @@ $est = $result1['est_arrival_date'];
             disabled
           />
 
+          <label for="catatan">Note Progress</label>
+          <input
+            type="text"
+            id="catatan"
+            name="catatan"
+            value="<?= $catatan?>"
+            style="color:white;"
+            disabled
+          />
+
           <label for="tuguby">Tugu By</label>
           <input
             type="text"
@@ -143,6 +154,8 @@ $est = $result1['est_arrival_date'];
             style="color:white;"
             disabled
           />
+
+          
 
           <label for="odno">No OD</label>
           <input

@@ -14,6 +14,7 @@ $dept = $result['dept'];
 $sales = $result['sales'];
 $kerusakan = $result['kerusakan'];
 $progress = $result['progress'];
+$catatan = $result['catatan'];
 $status = $result['status'];
 
 $query1 = mysqli_query($conn,"select * from progresscheck where noReceipt = '$id'");
@@ -121,7 +122,7 @@ $est = $result1['est_arrival_date'];
           <label for="kerusakan">Detail Kerusakan</label>
           <textarea name="kerusakan" id="kerusakan"><?= $kerusakan?></textarea>
 
-          <label style="margin:20px;text-align:center">- - Progress Tracking - - </label>
+          <p style="margin:20px;text-align:center;color:white">- - Progress Tracking - - </p>
         
           <label for="progress">Progress</label >
           <select name="progress" id="progress">
@@ -129,6 +130,14 @@ $est = $result1['est_arrival_date'];
             <option value="WHAITING PART" <?php if ($progress == "WHAITING PART") echo 'selected'?>>WHAITING PART</option>
             <option value="PART READY" <?php if ($progress == "PART READY") echo 'selected'?>>PART READY</option>
           </select>
+
+          <label for="catatan">Note Progress</label>
+          <input
+            type="text"
+            id="catatan"
+            name="catatan"
+            value="<?= $catatan?>"
+          />
 
           <label for="tuguby">Tugu By</label>
           <select name="tuguby" id="tuguby">
@@ -157,7 +166,7 @@ $est = $result1['est_arrival_date'];
           />
           <label for="estdate">Estimasi Tiba</label>
           <input
-            type="text"
+            type="date"
             id="estdate"
             name="estdate"
             value="<?= $est ?>"
