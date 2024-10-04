@@ -132,7 +132,7 @@ $est = $result1['est_arrival_date'];
           <label for="tuguby">Tugu By</label>
           <select name="tuguby" id="tuguby">
             <option value=""></option>
-            <option value="Store" <?php if ($tuguby == "STORE") echo 'selected'?>>STORE</option>
+            <option value="STORE" <?php if ($tuguby == "STORE") echo 'selected'?>>STORE</option>
             <option value="DC 73" <?php if ($tuguby == "DC 73") echo 'selected'?>>DC 73</option>
             <option value="NDC 72" <?php if ($tuguby == "NDC 72") echo 'selected'?>>NDC 72</option>
             <option value="NDC 23" <?php if ($tuguby == "NDC 23") echo 'selected'?>>NDC CIKUPA</option>
