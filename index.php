@@ -77,7 +77,7 @@ if (isset($_GET['keyword'])) {
             name="keyword"
             id="keyword"
           />
-          <button type="submit">Cari</button>
+          <button type="submit"><img src="icons/search.svg"></button>
         </form>
 
         <div class="hero">
@@ -104,9 +104,9 @@ if (isset($_GET['keyword'])) {
                         <td><?= $value['sales']?></td>
                         <td><?= $value['status']?></td>
                         <td>
-                          <a href="detail.php?id=<?= $value['noReceipt']?>&menu=Detail">Detail</a>
-                          <a href="edit.php?id=<?= $value['noReceipt']?>" >Update</a>
-                          <a href="finish.php?id=<?= $value['noReceipt']?>" onclick="return confirm('Apa Kamu yakin ingin Finish No. Receipt <?= $value['noReceipt']?> ?')">Finish</a>
+                          <a href="detail.php?id=<?= $value['noReceipt']?>&menu=Detail"><img src="icons/info.svg"></a>
+                          <a href="edit.php?id=<?= $value['noReceipt']?>" ><img src="icons/edit.svg"></a>
+                          <a href="finish.php?id=<?= $value['noReceipt']?>" onclick="return confirm('Apa Kamu yakin ingin Finish No. Receipt <?= $value['noReceipt']?> ?')"><img src="icons/check.svg"></a>
                         </td>
                       </tr>
                   <?php endforeach;?>

@@ -7,7 +7,7 @@ $noLkpb = strtoupper($_POST['noLkpb']);
 $nama = strtoupper($_POST['nama']);
 $dept = $_POST['dept'];
 $sales = $_POST['sales'];
-$kerusakan = strtoupper($_POST['kerusakan']);
+$kerusakan = $_POST['kerusakan'];
 $progress = 'ON PROCESS';
 $status = 'ACTIVE';
 

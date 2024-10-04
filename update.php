@@ -3,8 +3,8 @@ include 'connection.php';
 
 $id = $_POST['id'];
 $progress = strtoupper($_POST['progress']);
-$catatan = strtoupper($_POST['catatan']);
-$kerusakan = strtoupper($_POST['kerusakan']);
+$catatan = $_POST['catatan'];
+$kerusakan = $_POST['kerusakan'];
 $tuguby = $_POST['tuguby'];
 $odno = strtoupper($_POST['odno']);
 $somno = strtoupper($_POST['somno']);
