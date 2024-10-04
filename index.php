@@ -83,7 +83,7 @@ if (isset($_GET['keyword'])) {
         <div class="hero">
           <div class="hero-content" style="overflow-x: auto">
             <table>
-              <thead>
+              <thead style="position:sticky;top:0">
                 <tr>
                   <th>NO LKPB</th>
                   <th>NO RECEIPT</th>
